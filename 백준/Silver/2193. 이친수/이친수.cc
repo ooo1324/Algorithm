@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+using namespace std; 
+long long d[91];
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+
+	int n;
+	cin >> n;
+
+	d[1] = 1;
+	d[2] = 1;
+
+	for (int i = 3; i <= n; i++)
+	{
+		d[i] = d[i - 1] + d[i - 2];
+	}
+
+	cout << d[n];
+
+	return 0;
+}              
