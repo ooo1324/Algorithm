@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #define MAX 31
-long long d[MAX][MAX];
+int d[MAX][MAX];
 int main()
 {
     cin.tie(NULL);
