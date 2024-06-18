@@ -43,10 +43,9 @@ int main()
         if (R == 0 && C == 0)
             break;
 
-
+        string str;
         for (int i = 0; i < R; i++)
         {
-            string str;
             cin >> str;
             for (int j = 0; j < C; j++)
             {
