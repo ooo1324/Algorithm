@@ -12,14 +12,11 @@ bool isBoom = false;
 void checkBoom(int i, int j)
 {
     if (clickArr[i][j] != 'x')
-    {
         return;
-    }
 
     if (boomArr[i][j] == '*')
     {
         isBoom = true;
-        clickArr[i][j] = '*';
         return;
     }    
 
